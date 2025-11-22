@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.io as pio
+import seaborn as sns
+
 
 def set_style():
     """
@@ -12,9 +13,10 @@ def set_style():
     plt.rcParams["figure.figsize"] = (10, 6)
     plt.rcParams["axes.titlesize"] = 16
     plt.rcParams["axes.labelsize"] = 12
-    
+
     # Plotly default template
     pio.templates.default = "plotly_white"
+
 
 def save_fig(fig, filename: str, tight_layout: bool = True):
     """
